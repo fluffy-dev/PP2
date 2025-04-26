@@ -3,9 +3,9 @@ import csv
 
 DB_CONFIG = {
     'host': "localhost",
-    'dbname': "phonebook2",
-    'user': "bekassyl",
-    'password': "102910"
+    'dbname': "pp2",
+    'user': "postgres",
+    'password': "rauan2530"
 }
 
 def connect():
@@ -59,13 +59,13 @@ def insert_from_csv(path: str):
 def query_all():
     with connect() as conn:
         with conn.cursor() as cur:
-            cur.execute("SELECT * FROM phonebook2 ORDER BY id")
+            cur.execute("SELECT * FROM phonebook ORDER BY id")
             return cur.fetchall()
 
 def query_by_name(name: str):
     with connect() as conn:
         with conn.cursor() as cur:
-            cur.execute("SELECT * FROM phonebook2 WHERE name = %s", (name,))
+            cur.execute("SELECT * FROM phonebook WHERE name = %s", (name,))
             return cur.fetchall()
 
 def menu():
