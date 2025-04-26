@@ -31,7 +31,7 @@ while True:
     seconds = curtime.second
 
     screen.fill("BLACK")
-    screen.blit(bg, (0, 0))  
+    screen.blit(bg, (0, 0))
 
 
     rotate(screen, sec_hand, seconds * 6, (400, 300))  

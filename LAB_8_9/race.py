@@ -69,7 +69,7 @@ class Coin(pygame.sprite.Sprite):
 
     def respawn(self):
         # Спавним в нижней части экрана, там, где ездит машина
-        self.rect.center = (random.randint(40, WIDTH - 40), random.randint(400, 550))
+        self.rect.center = (random.randint(20, WIDTH - 20), random.randint(400, 550))
 
 # Создание объектов
 player = Player()
