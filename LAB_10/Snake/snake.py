@@ -6,9 +6,9 @@ import psycopg2
 
 def connect_db():
     return psycopg2.connect(
-        database="snake_db",
-        user="bekassyl",
-        password="102910",
+        database="pp2",
+        user="postgres",
+        password="rauan2530",
         host="localhost",
         port="5432"
     )

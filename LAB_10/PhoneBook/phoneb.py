@@ -3,8 +3,8 @@ import csv
 
 conn = psycopg2.connect(
     database="pp2",
-    user="bekassyl",
-    password="102910",
+    user="postgres",
+    password="rauan2530",
     host="localhost",
     port="5432"
 )
